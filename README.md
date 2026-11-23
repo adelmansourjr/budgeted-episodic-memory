@@ -1,5 +1,7 @@
 # Budgeted episodic memory
 
+**Compression stress tests:** [Sentence selection](sentence-bottleneck/) saved 58.6% of prompt tokens but lost 8.0 F1 points. [Conservative whole-article selection](article-preservation/) preserved the quality tolerance at a 2.1% token reduction. The two tests identify a bottleneck between retrieval coverage and reliable answer efficiency.
+
 **Cross-corpus follow-up:** [HotpotQA with a local Qwen reader](cross-corpus-qa/) replicated the complete-evidence gain (+12.0 points against preview-only retrieval). Answer F1 improved by an uncertain +2.24 points.
 
 **How much is it worth reopening an event after seeing a clue in another one?** This project combines an exact fixed-batch benchmark for a finite routing problem and a held-out text retrieval experiment based on real multi-hop questions. The text experiment uses a compact memory consisting of article titles and partial passages. A policy can buy the hidden remainder of each passage under a fixed reading budget.
