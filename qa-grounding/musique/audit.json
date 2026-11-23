@@ -1,0 +1,103 @@
+{
+  "case_count": 160,
+  "ids_unique": true,
+  "prompt_tokens": {
+    "min": 556,
+    "max": 1024,
+    "mean": 833.15625
+  },
+  "empty_normalized_answers": {
+    "frozen": 0,
+    "answer_only": 0,
+    "support": 0
+  },
+  "mean_answer_terms": {
+    "frozen": 1.3,
+    "answer_only": 1.39375,
+    "support": 1.8875
+  },
+  "all": {
+    "support_vs_answer_only": {
+      "groups": 160,
+      "mean_f1_difference": 0.03097222222222222,
+      "wins": 12,
+      "ties": 146,
+      "losses": 2,
+      "identical_normalized_answers": 61,
+      "exact_wins": 3,
+      "exact_losses": 1
+    },
+    "support_vs_frozen": {
+      "groups": 160,
+      "mean_f1_difference": 0.07553571428571429,
+      "wins": 22,
+      "ties": 135,
+      "losses": 3,
+      "identical_normalized_answers": 22,
+      "exact_wins": 7,
+      "exact_losses": 1
+    },
+    "answer_only_vs_frozen": {
+      "groups": 160,
+      "mean_f1_difference": 0.04456349206349206,
+      "wins": 13,
+      "ties": 144,
+      "losses": 3,
+      "identical_normalized_answers": 26,
+      "exact_wins": 5,
+      "exact_losses": 1
+    }
+  },
+  "conditional_descriptive": {
+    "all_support": {
+      "groups": 111,
+      "mean_f1_difference": 0.037137137137137136,
+      "wins": 10,
+      "ties": 99,
+      "losses": 2,
+      "identical_normalized_answers": 43,
+      "exact_wins": 3,
+      "exact_losses": 1
+    },
+    "missing_support": {
+      "groups": 49,
+      "mean_f1_difference": 0.017006802721088433,
+      "wins": 2,
+      "ties": 47,
+      "losses": 0,
+      "identical_normalized_answers": 18,
+      "exact_wins": 0,
+      "exact_losses": 0
+    },
+    "2hop": {
+      "groups": 146,
+      "mean_f1_difference": 0.03051750380517504,
+      "wins": 11,
+      "ties": 133,
+      "losses": 2,
+      "identical_normalized_answers": 55,
+      "exact_wins": 3,
+      "exact_losses": 1
+    },
+    "3hop": {
+      "groups": 10,
+      "mean_f1_difference": 0.0,
+      "wins": 0,
+      "ties": 10,
+      "losses": 0,
+      "identical_normalized_answers": 5,
+      "exact_wins": 0,
+      "exact_losses": 0
+    },
+    "4hop": {
+      "groups": 4,
+      "mean_f1_difference": 0.125,
+      "wins": 1,
+      "ties": 3,
+      "losses": 0,
+      "identical_normalized_answers": 1,
+      "exact_wins": 0,
+      "exact_losses": 0
+    }
+  }
+}

@@ -1,5 +1,7 @@
 # Budgeted episodic memory
 
+**Reader adaptation:** [Fixed-budget Qwen answer quality](qa-grounding/) improved HotpotQA answer F1 by **+15.99 points** over frozen Qwen at identical input tokens. The controlled support-supervision test is reported alongside it.
+
 **Compression stress tests:** [Sentence selection](sentence-bottleneck/) saved 58.6% of prompt tokens but lost 8.0 F1 points. [Conservative whole-article selection](article-preservation/) preserved the quality tolerance at a 2.1% token reduction. The two tests identify a bottleneck between retrieval coverage and reliable answer efficiency.
 
 **Cross-corpus follow-up:** [HotpotQA with a local Qwen reader](cross-corpus-qa/) replicated the complete-evidence gain (+12.0 points against preview-only retrieval). Answer F1 improved by an uncertain +2.24 points.

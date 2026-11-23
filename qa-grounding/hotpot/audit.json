@@ -1,0 +1,93 @@
+{
+  "case_count": 320,
+  "ids_unique": true,
+  "prompt_tokens": {
+    "min": 464,
+    "max": 1015,
+    "mean": 729.290625
+  },
+  "empty_normalized_answers": {
+    "frozen": 0,
+    "answer_only": 0,
+    "support": 0
+  },
+  "mean_answer_terms": {
+    "frozen": 1.209375,
+    "answer_only": 1.790625,
+    "support": 1.940625
+  },
+  "all": {
+    "support_vs_answer_only": {
+      "groups": 320,
+      "mean_f1_difference": 0.0005163239538239536,
+      "wins": 28,
+      "ties": 271,
+      "losses": 21,
+      "identical_normalized_answers": 144,
+      "exact_wins": 11,
+      "exact_losses": 11
+    },
+    "support_vs_frozen": {
+      "groups": 320,
+      "mean_f1_difference": 0.16039193445443445,
+      "wins": 83,
+      "ties": 221,
+      "losses": 16,
+      "identical_normalized_answers": 29,
+      "exact_wins": 49,
+      "exact_losses": 12
+    },
+    "answer_only_vs_frozen": {
+      "groups": 320,
+      "mean_f1_difference": 0.1598756105006105,
+      "wins": 77,
+      "ties": 227,
+      "losses": 16,
+      "identical_normalized_answers": 35,
+      "exact_wins": 49,
+      "exact_losses": 12
+    }
+  },
+  "conditional_descriptive": {
+    "all_support": {
+      "groups": 283,
+      "mean_f1_difference": -0.0003584558354876382,
+      "wins": 24,
+      "ties": 240,
+      "losses": 19,
+      "identical_normalized_answers": 130,
+      "exact_wins": 10,
+      "exact_losses": 10
+    },
+    "missing_support": {
+      "groups": 37,
+      "mean_f1_difference": 0.007207207207207209,
+      "wins": 4,
+      "ties": 31,
+      "losses": 2,
+      "identical_normalized_answers": 14,
+      "exact_wins": 1,
+      "exact_losses": 1
+    },
+    "bridge": {
+      "groups": 259,
+      "mean_f1_difference": -0.014934786363357792,
+      "wins": 21,
+      "ties": 218,
+      "losses": 20,
+      "identical_normalized_answers": 120,
+      "exact_wins": 7,
+      "exact_losses": 10
+    },
+    "comparison": {
+      "groups": 61,
+      "mean_f1_difference": 0.06612021857923497,
+      "wins": 7,
+      "ties": 53,
+      "losses": 1,
+      "identical_normalized_answers": 24,
+      "exact_wins": 4,
+      "exact_losses": 1
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "analysis": {
+    "arms": {
+      "answer_only": {
+        "clipped_outputs": 3,
+        "exact": 0.196875,
+        "f1": 0.2589728327228327,
+        "generation_tokens": 4.059375,
+        "prompt_tokens": 729.290625
+      },
+      "frozen": {
+        "clipped_outputs": 0,
+        "exact": 0.08125,
+        "f1": 0.09909722222222223,
+        "generation_tokens": 3.546875,
+        "prompt_tokens": 729.290625
+      },
+      "support": {
+        "clipped_outputs": 0,
+        "exact": 0.196875,
+        "f1": 0.2594891566766567,
+        "generation_tokens": 4.5625,
+        "prompt_tokens": 729.290625
+      }
+    },
+    "paired": {
+      "answer_only_vs_frozen": {
+        "exact": [
+          0.115625,
+          0.06875,
+          0.1625
+        ],
+        "f1": [
+          0.1598756105006105,
+          0.11277230235042733,
+          0.20759350198412696
+        ],
+        "f1_wins_ties_losses": [
+          77,
+          227,
+          16
+        ],
+        "generation_tokens": [
+          0.5125,
+          0.196875,
+          0.846875
+        ]
+      },
+      "support_vs_answer_only": {
+        "exact": [
+          0.0,
+          -0.028125,
+          0.028125
+        ],
+        "f1": [
+          0.000516323953823955,
+          -0.033199641504329004,
+          0.033531881313131305
+        ],
+        "f1_wins_ties_losses": [
+          28,
+          271,
+          21
+        ],
+        "generation_tokens": [
+          0.503125,
+          0.18125,
+          0.796875
+        ]
+      },
+      "support_vs_frozen": {
+        "exact": [
+          0.115625,
+          0.06875,
+          0.1625
+        ],
+        "f1": [
+          0.16039193445443445,
+          0.1118597132034632,
+          0.20907944572788315
+        ],
+        "f1_wins_ties_losses": [
+          83,
+          221,
+          16
+        ],
+        "generation_tokens": [
+          1.015625,
+          0.746875,
+          1.28125
+        ]
+      }
+    },
+    "passes": false
+  },
+  "max_generation_tokens": 24,
+  "max_prompt_tokens": 1024,
+  "peak_mlx_bytes": 1854494892,
+  "peak_rss_bytes": 1337442304,
+  "seconds": 751.8829054590024,
+  "test_count": 320,
+  "test_sha256": "e7251d98f31e189f66c5e8d80edd0167ad4b017fe723427dde74e2d352049b36",
+  "training_sha256": "88668855a490ecfef663dd1ccb98ba0f428851da1e1be91d104ab4494801a114"
+}
