@@ -1,5 +1,7 @@
 # Budgeted episodic memory
 
+**MuSiQue transfer.** The saved HotpotQA adapter scored 24.50 F1 versus 17.81 for frozen Qwen on 169 fresh groups with the same token limits. [Transfer report](qa-question-last/TRANSFER.md)
+
 **Question-last follow-up:** [Matched-budget Qwen evaluation](qa-question-last/) tests an adapter trained on the stronger prompt. It scores **42.27** versus **29.47** for frozen Qwen on 320 fresh HotpotQA questions.
 
 **Reader adaptation:** [Fixed-budget Qwen answer quality](qa-grounding/) improved HotpotQA answer F1 by **+15.99 points** over frozen Qwen at identical input tokens. The controlled support-supervision test is reported alongside it.

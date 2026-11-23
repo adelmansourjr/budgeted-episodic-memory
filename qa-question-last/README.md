@@ -28,6 +28,10 @@ Peak MLX allocation was 2.25 GiB in training and 1.74 GiB in held-out evaluation
 
 [Training and development record](adapter/training.json) · [Paired summary](results/summary.json) · [Numerical case ledger](results/cases.jsonl) · [Input fingerprints](results/preparation.json)
 
+## MuSiQue transfer
+
+The saved adapter scored 24.50 F1 versus 17.81 for frozen Qwen on 169 fresh groups, a paired difference of +6.69 points [95% interval +2.65, +11.06]. The transfer met the prespecified minimum three-point gain and positive lower confidence bound. [Transfer report](TRANSFER.md)
+
 ## Reproduce
 
 The recorded run used Apple Silicon, Python 3.12.8, NumPy 2.5.4, MLX 0.32.4, mlx-lm 0.32.0, Transformers 5.12.1 and Tokenizers 0.22.2. The earlier [model lock](../cross-corpus-qa/LOCK.json) identifies the matching local checkpoint. The trained adapter and numeric case ledger are included. The raw dataset and tokenized prompts are separate inputs.

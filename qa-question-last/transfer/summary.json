@@ -1,0 +1,65 @@
+{
+  "analysis": {
+    "arms": {
+      "frozen": {
+        "at_generation_cap": 0,
+        "exact": 0.10059171597633136,
+        "f1": 0.17806893960740117,
+        "generation_tokens": 4.295857988165681,
+        "prompt_tokens": 834.3076923076923
+      },
+      "question_last_adapter": {
+        "at_generation_cap": 2,
+        "exact": 0.13609467455621302,
+        "f1": 0.24498339093709787,
+        "generation_tokens": 5.727810650887574,
+        "prompt_tokens": 834.3076923076923
+      }
+    },
+    "paired": {
+      "exact": [
+        0.03550295857988166,
+        -0.005917159763313609,
+        0.07692307692307693
+      ],
+      "f1": [
+        0.06691445132969671,
+        0.026537642366914898,
+        0.11055470970128989
+      ],
+      "generation_tokens": [
+        1.4319526627218935,
+        0.7455621301775148,
+        2.195266272189349
+      ],
+      "wins_ties_losses": [
+        26,
+        134,
+        9
+      ]
+    },
+    "passes": true
+  },
+  "code": {
+    "../qa-grounding/score_transfer.py": "fd8983795a29fa796e3a6ebd79f6fc66afa08b5c9868039f07f7f7729685e655",
+    "TRANSFER_PROTOCOL.md": "338a6e8e2ca4c458d7ca816b3422ad232a492d839b86c93b2c13e7bd57d53507",
+    "prepare_transfer.py": "0c47f5ba68a25750494fb60e347e4e5dc53db4fbe8c077a8fc566e11a60629f3",
+    "score_transfer.py": "88aed2fba426ccac93d245f0cc46da1e8c142efe5f919631f9e1ff5fe62058a5",
+    "study.py": "a83c6c691d50127691c7398c778ba7cb3e16d8e0718e7b91e2ac59ccfdfcdb0c"
+  },
+  "elapsed_seconds": 181.95920749998186,
+  "exact_prefill_replay": true,
+  "frozen_checkpoint": {
+    "base_lock": "19317a484a1b978b452534842ff13825848e6dad476801ddc919373f1d0bd856",
+    "training_record": "fd1b766898055f8632964cb3d01a7798fdb9a500ea3d763ecf04974967f8c1bf",
+    "weights": "8bba177bf5a1e568c757a0996d0c65cca0c8014cf46614a71b5103b04e2fae87"
+  },
+  "frozen_logits_verified": true,
+  "input_sha256": "1dd9b421940902c49f4f990c4dc0d74f72140a0521a7507eb6a8169743d56ee4",
+  "max_output_tokens": 24,
+  "paired_groups": 169,
+  "peak_mlx_bytes": 1866176684,
+  "peak_rss_bytes": 1335246848,
+  "preparation_sha256": "f00c76a0e2f7fa7e59b39310460fc32b39df969313e29ebf8cffb744c31e23f4",
+  "result_sha256": "b9c0a64d056c3683d69bf7c6d2926024d330529d1c7cb70d6d3f32c971d21e05"
+}
