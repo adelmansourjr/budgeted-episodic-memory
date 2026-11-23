@@ -1,0 +1,25 @@
+# Can improved evidence retrieval improve downstream answers?
+
+A preregistered continuation of the budgeted episodic memory pilot. The original policies and configuration were fixed on MuSiQue. Here they are transferred unchanged to a different dataset, HotpotQA distractor development, and their selected text is passed to a fixed small language model. This tests downstream short-answer utility, separate from complete article support retrieval. It neither replicates Shen et al.'s video model nor measures human-like reasoning or model architecture compression.
+
+## Corpus, holdout and baselines
+
+Use the original 7,405 HotpotQA distractor development records, SHA-256 4e9ecb5c8d3b719f624d66b60f8d56bf227f03914f5f0753d6fa1b359d7104ea, obtained from a pinned byte-identical mirror. Group records by transitive overlap of normalized gold article titles, using labels for grouping only. Hash the group identities with salt hotpot-cross-corpus-23nov26-v1 and keep one hash-selected question per group. Reserve the first eight groups for an engineering smoke check. Freeze prompt, model, methods and settings before evaluating the next 192 groups. No Hotpot training or parameter selection. Uniform group sampling emphasizes diversity across support topics. The resulting group-weighted sample does not estimate the leaderboard's question-weighted F1.
+
+Retain the parent 24-word preview index and 320-unit cap for purchased tail words plus per-read overhead. Compare reveal-bridge against the original strongest development control, preview-bridge, with no retuning. Also evaluate the iterative lexical feedback control, an empty-document diagnostic, and an annotated support-article reference. The latter uses labels and may exceed the read cap. All assistance from gold labels is confined to that reference and evaluation. Retrieval receives no answer, support labels, or gold sentence markers. Methods rank the same salted context order and see the same preview information. The language model sees original titles and full text of selected articles in the same salted order. It does not see unread articles or their previews. Information budgets count the same quantities as the parent study. Separately record actual tokenized model inputs and generated tokens.
+
+## Actual inference and analysis
+
+Use the existing MLX Qwen3-1.7B converted 4-bit checkpoint. Pin its config, weights, tokenizer and exact prompt code. The prompt requests a short span or yes/no, and 'unknown' when evidence is insufficient. Disable thinking and use greedy decoding, at most 20 generated tokens. Take the first nonempty line and strip an optional literal 'Answer:' prefix. Apply the HotpotQA normalization, multiset answer F1, and standard yes/no/noanswer mismatch rule. Evaluate each arm on each selected item. Rotate method order by a deterministic item hash. Cache exact identical within-item token sequences only, for computing shorter paired audit runs. Account token costs per logical call and publish wall and allocation for the whole execution; caching and device noise prevent claiming a latency contrast.
+
+Primary estimand is mean paired answer F1 difference on the 192 prospective groups, reveal-bridge minus preview-bridge. Success requires at least +2 points and a positive paired percentile 95% interval over 20,000 bootstrap resamples of the 192 group representatives. Secondary endpoints include answer exact match, answer F1 against iterative feedback, coverage of all support articles, prompt and output tokens, no-document and annotated-support checks, and support switching within questions. These are descriptive mechanisms rather than independent replication. No retries, no model downloads, no claim that an incorrect no-document answer proves absence of memorization. Do not publish retrieved paragraphs, answer text, prompts or model weights. Save score inputs as normalized token lengths and overlap counts, and hashes of the model token IDs/output, so the aggregate result is independently checkable without publishing extracted text. Timed inference uses one model, a single active sequence and no alternate checkpoints.
+
+## Literature
+
+- Yang et al., HotpotQA, EMNLP 2018, https://aclanthology.org/D18-1259/
+- Trivedi et al., MuSiQue, TACL 2022, https://aclanthology.org/2022.tacl-1.31/
+- Trivedi et al., IRCoT, ACL 2023, https://aclanthology.org/2023.acl-long.557/
+- Wu et al. with Junxiao Shen, MARC, ICLR 2026, https://proceedings.iclr.cc/paper_files/paper/2026/hash/16049e0c3f47899091ac46f8b3afb178-Abstract-Conference.html
+- Tang et al., SURGE, ICLR 2026, https://proceedings.iclr.cc/paper_files/paper/2026/hash/07b92344686c19cf3ffc335a0f565406-Abstract-Conference.html
+
+IRCoT establishes the value of interleaving retrieval and LLM reasoning on these datasets. Our text pipeline compares simpler, frozen lexical retrieval policies at a shared acquisition cap and evaluates their outputs with the same unmodified reader. Its scope differs from open-corpus retrieval, RL distillation of a compact video model, and comparisons to the best available retrievers.

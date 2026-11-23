@@ -1,0 +1,107 @@
+{
+  "smoke": false,
+  "n": 192,
+  "source_group_count": 6471,
+  "physical_calls": 773,
+  "logical_calls": 960,
+  "readout": {
+    "arms": {
+      "preview_bridge": {
+        "f1": 0.32767098268017386,
+        "exact": 0.25,
+        "complete": 0.7916666666666666,
+        "spent": 291.3177083333333,
+        "prompt_tokens": 775.890625,
+        "generation_tokens": 5.833333333333333
+      },
+      "reveal_bridge": {
+        "f1": 0.35003596513851926,
+        "exact": 0.265625,
+        "complete": 0.9114583333333334,
+        "spent": 291.5104166666667,
+        "prompt_tokens": 776.34375,
+        "generation_tokens": 6.526041666666667
+      },
+      "iterative": {
+        "f1": 0.3372400993506837,
+        "exact": 0.2552083333333333,
+        "complete": 0.8802083333333334,
+        "spent": 291.6822916666667,
+        "prompt_tokens": 771.0052083333334,
+        "generation_tokens": 6.390625
+      },
+      "closed_book": {
+        "f1": 0.021346275252525252,
+        "exact": 0.015625,
+        "complete": 0.0,
+        "spent": 0.0,
+        "prompt_tokens": 77.99479166666667,
+        "generation_tokens": 3.046875
+      },
+      "gold_articles": {
+        "f1": 0.46099145030307964,
+        "exact": 0.3177083333333333,
+        "complete": 1.0,
+        "spent": 94.73958333333333,
+        "prompt_tokens": 305.28125,
+        "generation_tokens": 7.5
+      }
+    },
+    "comparisons": {
+      "preview_bridge": {
+        "f1": [
+          0.02236498245834546,
+          -0.011669027168615984,
+          0.05749433975682039
+        ],
+        "exact": [
+          0.015625,
+          -0.015625,
+          0.046875
+        ],
+        "complete": [
+          0.11979166666666667,
+          0.0625,
+          0.17708333333333334
+        ],
+        "prompt_tokens": [
+          0.453125,
+          -5.828255208333333,
+          6.583463541666655
+        ]
+      },
+      "iterative": {
+        "f1": [
+          0.012795865787835606,
+          -0.02031648440837198,
+          0.046387893143649696
+        ],
+        "exact": [
+          0.010416666666666666,
+          -0.015625,
+          0.041666666666666664
+        ],
+        "complete": [
+          0.03125,
+          -0.015625,
+          0.078125
+        ],
+        "prompt_tokens": [
+          5.338541666666667,
+          -0.984375,
+          11.84375
+        ]
+      }
+    },
+    "primary_pass": false
+  },
+  "runtime_seconds": 435.36035366597935,
+  "peak_mlx_bytes": 1807718668,
+  "peak_process_rss_bytes": 1455554560,
+  "raw_sha256": "94fec7c6d4711e0c9e67cc2d18c8db5b9a4c9d80016dfede5978be18a03af227",
+  "locked_sha256": "19317a484a1b978b452534842ff13825848e6dad476801ddc919373f1d0bd856",
+  "runtime": {
+    "python": "3.12.8",
+    "mlx_lm": "0.32.0"
+  }
+}

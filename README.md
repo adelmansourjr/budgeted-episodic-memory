@@ -1,5 +1,7 @@
 # Budgeted episodic memory
 
+**Cross-corpus follow-up:** [HotpotQA with a local Qwen reader](cross-corpus-qa/) replicated the complete-evidence gain (+12.0 points against preview-only retrieval). Answer F1 improved by an uncertain +2.24 points.
+
 **How much is it worth reopening an event after seeing a clue in another one?** This project combines an exact fixed-batch benchmark for a finite routing problem and a held-out text retrieval experiment based on real multi-hop questions. The text experiment uses a compact memory consisting of article titles and partial passages. A policy can buy the hidden remainder of each passage under a fixed reading budget.
 
 On **1,332 held-out MuSiQue questions** at the predeclared 24-word preview and 320-word budget, a ranker that used newly purchased evidence retrieved all annotated support paragraphs in **54.50%** of episodes. Its strongest development-selected control, the same bridge policy limited to the original previews, reached **50.30%**. The paired improvement was **4.20 percentage points** (95% component-bootstrap interval **1.55 to 7.05**). Mean paid volume was **312.46 vs 312.56 words**. Four equal reads yielded an inconclusive result. The advantage almost disappeared with 48-word previews.
