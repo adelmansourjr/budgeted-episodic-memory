@@ -1,0 +1,6 @@
+__pycache__/
+data/*
+!data/README.md
+*.tmp
+*.pyc
+results/**/rows.jsonl

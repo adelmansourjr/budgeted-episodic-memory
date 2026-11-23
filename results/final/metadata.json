@@ -1,0 +1,10 @@
+{
+  "data_sha256": "15fa63794d18a94ce12411aca6e2327e65b6e83b0b1490efab3f1962e48abf3b",
+  "lock_sha256": "10224ff50395208dd54c6d9e8528a442fbd64c3677d0e5788fe97711d06cca25",
+  "row_sha256": "150dc21df6697a34b2f4e318da476cfe097a7e50f96c27f58d7cdab44850d421",
+  "wall_seconds": 44.10971745799179,
+  "peak_rss_bytes": 102465536,
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python": "3.12.14",
+  "numpy": "2.3.5"
+}

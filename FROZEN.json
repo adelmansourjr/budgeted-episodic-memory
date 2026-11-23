@@ -1,0 +1,113 @@
+{
+  "version": "first-final",
+  "sha256": {
+    "study.py": "f6a3b90a0bd1699113dfed656150910cce7ee26e8d0f5a28edc0e75e08135a81",
+    "routing_bound.py": "8e4bf26b85db772a3a74631b0a1a9bf813ff4154e084fd3f9dbc69b4a6020cb8",
+    "test_study.py": "1c3c01581cb5a620ed922e2761fb7bb3edc4e9d1c4969f30da9d2246b25ca6bf",
+    "PROTOCOL.md": "7f33b12f7c0e3b3c108af0b1f418177d11b5bbc894bf303a870231b0b91774e6",
+    "results/development.json": "0cd7f476c13f12a09942c245d2ad1932567937d1add16a20a27b2e386c60c12b"
+  },
+  "previews": [
+    24,
+    8,
+    48
+  ],
+  "selection": {
+    "bm25": {
+      "method": "bm25",
+      "i": 0,
+      "config": {},
+      "n": 395,
+      "score": [
+        0.25569620253164554,
+        1.5367088607594936,
+        -311.1367088607595
+      ]
+    },
+    "tfidf": {
+      "method": "tfidf",
+      "i": 0,
+      "config": {},
+      "n": 395,
+      "score": [
+        0.26582278481012656,
+        1.589873417721519,
+        -311.6354430379747
+      ]
+    },
+    "mmr": {
+      "method": "mmr",
+      "i": 0,
+      "config": {
+        "weight": 0.15
+      },
+      "n": 395,
+      "score": [
+        0.23291139240506328,
+        1.521518987341772,
+        -311.53164556962025
+      ]
+    },
+    "coverage": {
+      "method": "coverage",
+      "i": 1,
+      "config": {
+        "weight": 0.35
+      },
+      "n": 395,
+      "score": [
+        0.2683544303797468,
+        1.5544303797468355,
+        -310.77974683544306
+      ]
+    },
+    "iterative": {
+      "method": "iterative",
+      "i": 5,
+      "config": {
+        "weight": 0.75,
+        "expansions": 16
+      },
+      "n": 395,
+      "score": [
+        0.3721518987341772,
+        1.6708860759493671,
+        -311.5873417721519
+      ]
+    },
+    "preview_bridge": {
+      "method": "preview_bridge",
+      "i": 4,
+      "config": {
+        "weight": 0.75,
+        "title_share": 0.33
+      },
+      "n": 395,
+      "score": [
+        0.44556962025316454,
+        1.8025316455696203,
+        -311.746835443038
+      ]
+    },
+    "reveal_bridge": {
+      "method": "reveal_bridge",
+      "i": 4,
+      "config": {
+        "weight": 0.75,
+        "title_share": 0.33
+      },
+      "n": 395,
+      "score": [
+        0.46835443037974683,
+        1.789873417721519,
+        -311.20759493670886
+      ]
+    }
+  },
+  "best_comparator": "preview_bridge",
+  "primary_budget": "words320",
+  "primary_preview": 24,
+  "primary_minimum_pp": 2.0,
+  "bootstrap_seed": 110327,
+  "bootstrap_draws": 5000
+}
