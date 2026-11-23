@@ -17,6 +17,8 @@ Peak MLX allocation was **1.74 GiB**, with one loaded model and one active gener
 
 [Frozen protocol](TRANSFER_PROTOCOL.md) · [Input preparation](TRANSFER_DATA.md) · [Verified summary](transfer/summary.json) · [Numeric ledger](transfer/cases.jsonl) · [Preparation fingerprint](transfer/preparation.json)
 
+A follow-up tests the same readers with exactly matched generated and scored token counts. [Exact-length comparison](EQUAL_DECODE.md)
+
 ## Reproduce
 
 Use the pinned checkpoint and the original datasets. Keep tokenized prompts, labels and output replays in scratch storage. The commands below use the archived adapter directly.

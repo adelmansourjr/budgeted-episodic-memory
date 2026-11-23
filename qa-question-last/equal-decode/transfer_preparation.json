@@ -1,0 +1,43 @@
+{
+  "dataset": "MuSiQue-Ans development, unused retrieval-test components",
+  "source_sha256": "15fa63794d18a94ce12411aca6e2327e65b6e83b0b1490efab3f1962e48abf3b",
+  "hotpot_sha256": "4e9ecb5c8d3b719f624d66b60f8d56bf227f03914f5f0753d6fa1b359d7104ea",
+  "script_sha256": "0c47f5ba68a25750494fb60e347e4e5dc53db4fbe8c077a8fc566e11a60629f3",
+  "prior_panel_builder_sha256": "08d57d0e6fbd3af5ae31c938b54e9f9ab10b9c14a405b152f30bd52d2abbbabc",
+  "prompt_builder_sha256": "e2e318d3f5d69ebd4ad8d2514cbbf843d53a770ff9bf74eadf6bdb5cff18546c",
+  "prompt_ordering_sha256": "48069217d5ad25d89fd8bfed3c44206988af947b90df601d0931f7dd1ff94993",
+  "base_model_fingerprints": {
+    "config.json": "507a6701220524eb8b283425bf0856a9ae4f21f4052e563896ddd668994b1dc7",
+    "model.safetensors": "0e86d9677e519323849eac1bc272caae88567a481ff188c431f70be543d9995f",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+    "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+    "added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+  },
+  "test_sha256": "1dd9b421940902c49f4f990c4dc0d74f72140a0521a7507eb6a8169743d56ee4",
+  "group_salt": "musique-qwen-transfer-23nov2026-v1",
+  "earlier_panel_components": 160,
+  "earlier_groups_sha256": "76bf8e65d655e42c92fe371ef2a9fda8fcc2e43aac2933a56e2da9728d5bfb0a",
+  "num_test": 169,
+  "retrieval_test_components": 330,
+  "excluded_due_to_hotpot_fitting_title_overlap": 1,
+  "disjoint_from_hotpot_fitting_gold_titles": 1408,
+  "disjoint_from_hotpot_fitting_acquired_titles": 4164,
+  "max_prompt_tokens": 1024,
+  "actual_max_prompt_tokens": 1019,
+  "mean_prompt_tokens": 834.3076923076923,
+  "prompt_order": "instruction, passages, question, answer cue",
+  "counts": {
+    "complete": 117,
+    "article_complete": 120,
+    "truncated": 26,
+    "cases_with_aliases": 49
+  },
+  "question_types": {
+    "2hop": 163,
+    "3hop": 5,
+    "4hop": 1
+  }
+}

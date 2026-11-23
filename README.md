@@ -1,5 +1,7 @@
 # Budgeted episodic memory
 
+**Equal MuSiQue generation lengths.** [Exact-length comparison](qa-question-last/EQUAL_DECODE.md) compares full six-token prefixes across two disjoint panels under identical forced decoding.
+
 **MuSiQue transfer.** The saved HotpotQA adapter scored 24.50 F1 versus 17.81 for frozen Qwen on 169 fresh groups with the same token limits. [Transfer report](qa-question-last/TRANSFER.md)
 
 **Question-last follow-up:** [Matched-budget Qwen evaluation](qa-question-last/) tests an adapter trained on the stronger prompt. It scores **42.27** versus **29.47** for frozen Qwen on 320 fresh HotpotQA questions.

@@ -32,6 +32,10 @@ Peak MLX allocation was 2.25 GiB in training and 1.74 GiB in held-out evaluation
 
 The saved adapter scored 24.50 F1 versus 17.81 for frozen Qwen on 169 fresh groups, a paired difference of +6.69 points [95% interval +2.65, +11.06]. The transfer met the prespecified minimum three-point gain and positive lower confidence bound. [Transfer report](TRANSFER.md)
 
+## Equal generated lengths
+
+The two readers each emitted twelve ordinary tokens, scored at matched prefix lengths on disjoint MuSiQue panels. The pooled six-token F1 was 7.55 for frozen Qwen and 16.71 for the adapter. [Exact-length results and panel-specific intervals](EQUAL_DECODE.md)
+
 ## Reproduce
 
 The recorded run used Apple Silicon, Python 3.12.8, NumPy 2.5.4, MLX 0.32.4, mlx-lm 0.32.0, Transformers 5.12.1 and Tokenizers 0.22.2. The earlier [model lock](../cross-corpus-qa/LOCK.json) identifies the matching local checkpoint. The trained adapter and numeric case ledger are included. The raw dataset and tokenized prompts are separate inputs.

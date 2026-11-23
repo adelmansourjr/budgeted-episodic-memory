@@ -1,0 +1,371 @@
+{
+  "allowed_mask_sha256": "1ead5879abbdcb0975fa8a349893927b83fed22f34a2a83f42224191fbedfbed",
+  "allowed_token_ids": 149198,
+  "analysis": {
+    "pooled": {
+      "blocked_by_six": {
+        "frozen": 300,
+        "question_last_adapter": 273
+      },
+      "common_unforced_prefix": {
+        "delta": [
+          0.038707965455685826,
+          0.013464683745838759,
+          0.06436109904954886
+        ],
+        "mean_tokens": 2.5775075987841944
+      },
+      "count": 329,
+      "curve": {
+        "12": {
+          "ci": [
+            0.02279502072344348,
+            0.06400650579725838
+          ],
+          "delta": 0.043474970252425006,
+          "f1": {
+            "frozen": 0.07409242226871406,
+            "question_last_adapter": 0.11756739252113907
+          },
+          "simultaneous_ci": [
+            0.0121799203175574,
+            0.07477002018729262
+          ]
+        },
+        "2": {
+          "ci": [
+            0.011448834853090171,
+            0.05709063057847245
+          ],
+          "delta": 0.03398948231774981,
+          "f1": {
+            "frozen": 0.10037149611617696,
+            "question_last_adapter": 0.13436097843392678
+          },
+          "simultaneous_ci": [
+            0.0026944323828822017,
+            0.0652845322526174
+          ]
+        },
+        "4": {
+          "ci": [
+            0.04690729483282675,
+            0.10476956385391036
+          ],
+          "delta": 0.07569112751483567,
+          "f1": {
+            "frozen": 0.13598205239542624,
+            "question_last_adapter": 0.211673179910262
+          },
+          "simultaneous_ci": [
+            0.044396077579968066,
+            0.10698617744970328
+          ]
+        },
+        "6": {
+          "ci": [
+            0.06635865274543087,
+            0.11721272648324313
+          ],
+          "delta": 0.09161348614236146,
+          "f1": {
+            "frozen": 0.0755270902687316,
+            "question_last_adapter": 0.16714057641109312
+          },
+          "simultaneous_ci": [
+            0.06031843620749386,
+            0.12290853607722907
+          ]
+        },
+        "8": {
+          "ci": [
+            0.04656239446133065,
+            0.09304970611961491
+          ],
+          "delta": 0.06975147446272063,
+          "f1": {
+            "frozen": 0.07810190484962522,
+            "question_last_adapter": 0.14785337931234588
+          },
+          "simultaneous_ci": [
+            0.03845642452785303,
+            0.10104652439758824
+          ]
+        }
+      },
+      "exact_delta": [
+        0.015197568389057751,
+        0.0,
+        0.030395136778115502
+      ],
+      "exact_match": {
+        "frozen": 0.0060790273556231,
+        "question_last_adapter": 0.02127659574468085
+      },
+      "passes": true,
+      "wins_ties_losses": [
+        85,
+        229,
+        15
+      ]
+    },
+    "replicated": true,
+    "replication": {
+      "blocked_by_six": {
+        "frozen": 149,
+        "question_last_adapter": 140
+      },
+      "common_unforced_prefix": {
+        "delta": [
+          0.030952380952380953,
+          -0.009672619047619046,
+          0.070625
+        ],
+        "mean_tokens": 2.53125
+      },
+      "count": 160,
+      "curve": {
+        "12": {
+          "ci": [
+            0.02093886623642058,
+            0.08395124651918125
+          ],
+          "delta": 0.052059705089596384,
+          "f1": {
+            "frozen": 0.07555194805194805,
+            "question_last_adapter": 0.12761165314154446
+          },
+          "simultaneous_ci": [
+            0.004082522549913856,
+            0.10003688762927891
+          ]
+        },
+        "2": {
+          "ci": [
+            -0.0012499999999999998,
+            0.07083333333333333
+          ],
+          "delta": 0.034791666666666665,
+          "f1": {
+            "frozen": 0.11875,
+            "question_last_adapter": 0.15354166666666663
+          },
+          "simultaneous_ci": [
+            -0.013185515873015863,
+            0.0827688492063492
+          ]
+        },
+        "4": {
+          "ci": [
+            0.042201636904761905,
+            0.13407762896825398
+          ],
+          "delta": 0.08822420634920637,
+          "f1": {
+            "frozen": 0.1269047619047619,
+            "question_last_adapter": 0.21512896825396827
+          },
+          "simultaneous_ci": [
+            0.040247023809523844,
+            0.13620138888888889
+          ]
+        },
+        "6": {
+          "ci": [
+            0.06287586805555558,
+            0.1349294056637806
+          ],
+          "delta": 0.09798295454545458,
+          "f1": {
+            "frozen": 0.07402281746031744,
+            "question_last_adapter": 0.172005772005772
+          },
+          "simultaneous_ci": [
+            0.05000577200577205,
+            0.1459601370851371
+          ]
+        },
+        "8": {
+          "ci": [
+            0.04996685606060607,
+            0.11746193043068039
+          ],
+          "delta": 0.08271083083583088,
+          "f1": {
+            "frozen": 0.07289366883116882,
+            "question_last_adapter": 0.15560449966699966
+          },
+          "simultaneous_ci": [
+            0.03473364829614835,
+            0.1306880133755134
+          ]
+        }
+      },
+      "exact_delta": [
+        0.0125,
+        0.0,
+        0.03125
+      ],
+      "exact_match": {
+        "frozen": 0.00625,
+        "question_last_adapter": 0.01875
+      },
+      "passes": true,
+      "wins_ties_losses": [
+        45,
+        108,
+        7
+      ]
+    },
+    "transfer": {
+      "blocked_by_six": {
+        "frozen": 151,
+        "question_last_adapter": 133
+      },
+      "common_unforced_prefix": {
+        "delta": [
+          0.04605053066591529,
+          0.014050436742744433,
+          0.0795627876397107
+        ],
+        "mean_tokens": 2.621301775147929
+      },
+      "count": 169,
+      "curve": {
+        "12": {
+          "ci": [
+            0.008529993592863414,
+            0.061300078948007944
+          ],
+          "delta": 0.035347410643268636,
+          "f1": {
+            "frozen": 0.07271062271062272,
+            "question_last_adapter": 0.10805803335389136
+          },
+          "simultaneous_ci": [
+            -0.00554742102079378,
+            0.07624224230733105
+          ]
+        },
+        "2": {
+          "ci": [
+            0.005663332394101623,
+            0.06264675495444727
+          ],
+          "delta": 0.033230017845402464,
+          "f1": {
+            "frozen": 0.08297172912557527,
+            "question_last_adapter": 0.11620174697097775
+          },
+          "simultaneous_ci": [
+            -0.007664813818659952,
+            0.07412484950946488
+          ]
+        },
+        "4": {
+          "ci": [
+            0.029045623180238556,
+            0.10008464825772517
+          ],
+          "delta": 0.06382549074856766,
+          "f1": {
+            "frozen": 0.1445759368836292,
+            "question_last_adapter": 0.20840142763219685
+          },
+          "simultaneous_ci": [
+            0.02293065908450525,
+            0.10472032241263007
+          ]
+        },
+        "6": {
+          "ci": [
+            0.050404051077128004,
+            0.12080506032429103
+          ],
+          "delta": 0.08558322019860483,
+          "f1": {
+            "frozen": 0.07695125387433079,
+            "question_last_adapter": 0.16253447407293561
+          },
+          "simultaneous_ci": [
+            0.04468838853454241,
+            0.12647805186266725
+          ]
+        },
+        "8": {
+          "ci": [
+            0.025688862419631645,
+            0.08891375718298795
+          ],
+          "delta": 0.05748226132841518,
+          "f1": {
+            "frozen": 0.08303277918662534,
+            "question_last_adapter": 0.14051504051504052
+          },
+          "simultaneous_ci": [
+            0.01658742966435276,
+            0.0983770929924776
+          ]
+        }
+      },
+      "exact_delta": [
+        0.01775147928994083,
+        -0.005917159763313609,
+        0.047337278106508875
+      ],
+      "exact_match": {
+        "frozen": 0.005917159763313609,
+        "question_last_adapter": 0.023668639053254437
+      },
+      "passes": true,
+      "wins_ties_losses": [
+        40,
+        121,
+        8
+      ]
+    }
+  },
+  "emitted_tokens_per_arm": 12,
+  "frozen_logits_verified": true,
+  "ledger_sha256": "f700e067f5efb8262bc439a7d90b7851753c66fe33f7d1ccdc1bafcaf4aae6cb",
+  "lengths": [
+    2,
+    4,
+    6,
+    8,
+    12
+  ],
+  "locks": {
+    "checkpoint": {
+      "base_lock": "19317a484a1b978b452534842ff13825848e6dad476801ddc919373f1d0bd856",
+      "training_record": "fd1b766898055f8632964cb3d01a7798fdb9a500ea3d763ecf04974967f8c1bf",
+      "weights": "8bba177bf5a1e568c757a0996d0c65cca0c8014cf46614a71b5103b04e2fae87"
+    },
+    "code": {
+      "EQUAL_DECODE_PROTOCOL.md": "bbdde3adc92c2ee2c69cdcf55f1e8dca8de66ce3cf25d253c82f6b04f9496bf3",
+      "prepare_equal_replication.py": "50d6a75027f608c10250c95f50c0096b68d182a739bfbb004f712de76525e28b",
+      "prepare_transfer.py": "0c47f5ba68a25750494fb60e347e4e5dc53db4fbe8c077a8fc566e11a60629f3",
+      "score_equal_decode.py": "0f97cbd123bc3a90058b42893f6bf338a9d28f5ff20741ca0b0641f9b6851166",
+      "score_transfer.py": "88aed2fba426ccac93d245f0cc46da1e8c142efe5f919631f9e1ff5fe62058a5",
+      "study.py": "a83c6c691d50127691c7398c778ba7cb3e16d8e0718e7b91e2ac59ccfdfcdb0c"
+    },
+    "panels": {
+      "replication": {
+        "manifest.json": "a2ba68b48ee7fd284557866ec94279cae68b3374e4cd47d05123a06c216f5161",
+        "test.jsonl": "9eba98ebc0ef03a7a2dca413157d881a78344c403fbb9bdb3fdf730bc281c311"
+      },
+      "transfer": {
+        "manifest.json": "f00c76a0e2f7fa7e59b39310460fc32b39df969313e29ebf8cffb744c31e23f4",
+        "test.jsonl": "1dd9b421940902c49f4f990c4dc0d74f72140a0521a7507eb6a8169743d56ee4"
+      }
+    }
+  },
+  "paired_cases": 329,
+  "peak_mlx_bytes": 1866340524,
+  "peak_rss_bytes": 1342144512,
+  "primary_tokens": 6,
+  "private_tokens_sha256": "39a7ef0b995531572ee38f1ecdc913460dd13cbe8aa5c2b6621210b1316e09fd",
+  "seconds": 1130.8385603330098,
+  "validated_prefix": true,
+  "validated_standalone_six": true
+}
