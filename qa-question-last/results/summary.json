@@ -1,0 +1,106 @@
+{
+  "analysis": {
+    "arms": {
+      "frozen": {
+        "at_generation_cap": 1,
+        "exact": 0.225,
+        "f1": 0.29466231684981686,
+        "generation_tokens": 4.4125,
+        "prompt_tokens": 729.8625
+      },
+      "question_first_adapter": {
+        "at_generation_cap": 3,
+        "exact": 0.2625,
+        "f1": 0.37218985875235877,
+        "generation_tokens": 4.225,
+        "prompt_tokens": 729.8625
+      },
+      "question_last_adapter": {
+        "at_generation_cap": 5,
+        "exact": 0.275,
+        "f1": 0.42271588403781496,
+        "generation_tokens": 5.60625,
+        "prompt_tokens": 729.8625
+      }
+    },
+    "paired": {
+      "question_first_adapter_vs_frozen": {
+        "exact": [
+          0.0375,
+          -0.003125,
+          0.078125
+        ],
+        "f1": [
+          0.0775275419025419,
+          0.030728433892496392,
+          0.12480189818861694
+        ],
+        "generation_tokens": [
+          -0.1875,
+          -0.5125,
+          0.153125
+        ],
+        "wins_ties_losses": [
+          64,
+          225,
+          31
+        ]
+      },
+      "question_last_adapter_vs_frozen": {
+        "exact": [
+          0.05,
+          0.009375,
+          0.090625
+        ],
+        "f1": [
+          0.12805356718799815,
+          0.08164628468935334,
+          0.175760519098025
+        ],
+        "generation_tokens": [
+          1.19375,
+          0.684375,
+          1.721875
+        ],
+        "wins_ties_losses": [
+          86,
+          212,
+          22
+        ]
+      },
+      "question_last_adapter_vs_question_first_adapter": {
+        "exact": [
+          0.0125,
+          -0.025,
+          0.05
+        ],
+        "f1": [
+          0.05052602528545622,
+          0.01004717156289647,
+          0.09115203853518071
+        ],
+        "generation_tokens": [
+          1.38125,
+          0.890625,
+          1.89375
+        ],
+        "wins_ties_losses": [
+          63,
+          230,
+          27
+        ]
+      }
+    },
+    "passes": true
+  },
+  "exact_prefill_replay": true,
+  "frozen_logits_verified": true,
+  "max_output_tokens": 24,
+  "peak_mlx_bytes": 1868159148,
+  "peak_rss_bytes": 1412857856,
+  "prepared_test_sha256": "0833bf46a35fc45c854b8a73520c54cfaa84bc94c6a15f3ac7fdc4451d0904a9",
+  "seconds": 361.77687712499755,
+  "test_count": 320,
+  "test_sha256": "d2cbc7e5f855294fb8d3ae5c68ff6e40020122864d8c0fddc0b384fb94ab68b4",
+  "training_sha256": "fd1b766898055f8632964cb3d01a7798fdb9a500ea3d763ecf04974967f8c1bf"
+}
