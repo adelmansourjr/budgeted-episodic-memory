@@ -36,6 +36,10 @@ The saved adapter scored 24.50 F1 versus 17.81 for frozen Qwen on 169 fresh grou
 
 The two readers each emitted twelve ordinary tokens, scored at matched prefix lengths on disjoint MuSiQue panels. The pooled six-token F1 was 7.55 for frozen Qwen and 16.71 for the adapter. [Exact-length results and panel-specific intervals](EQUAL_DECODE.md)
 
+## Equal prefixes before natural stopping
+
+With unrestricted greedy decoding, the equal pre-EOS prefixes scored 21.23 F1 for the saved adapter and 17.00 for frozen Qwen across 329 questions. The paired gain was +4.23 [+1.65 to +6.85] points. [Natural-stop report](NATURAL_STOP.md)
+
 ## Reproduce
 
 The recorded run used Apple Silicon, Python 3.12.8, NumPy 2.5.4, MLX 0.32.4, mlx-lm 0.32.0, Transformers 5.12.1 and Tokenizers 0.22.2. The earlier [model lock](../cross-corpus-qa/LOCK.json) identifies the matching local checkpoint. The trained adapter and numeric case ledger are included. The raw dataset and tokenized prompts are separate inputs.

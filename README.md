@@ -1,5 +1,7 @@
 # Budgeted episodic memory
 
+**MuSiQue before natural stopping.** [Matched-prefix report](qa-question-last/NATURAL_STOP.md) scores both readers at the shorter native answer length across two disjoint panels.
+
 **Equal MuSiQue generation lengths.** [Exact-length comparison](qa-question-last/EQUAL_DECODE.md) compares full six-token prefixes across two disjoint panels under identical forced decoding.
 
 **MuSiQue transfer.** The saved HotpotQA adapter scored 24.50 F1 versus 17.81 for frozen Qwen on 169 fresh groups with the same token limits. [Transfer report](qa-question-last/TRANSFER.md)

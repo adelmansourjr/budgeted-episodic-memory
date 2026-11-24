@@ -1,0 +1,91 @@
+{
+  "arms": 32,
+  "draws_per_panel": 8,
+  "exact_token_eos_cap_replay": true,
+  "pairs": 16,
+  "peak_mlx_bytes": 1852561580,
+  "peak_rss_bytes": 1061273600,
+  "rows": [
+    {
+      "group": "57665ac44adf008ee4164373fe26a22fd48975af375df07bba03f98b99027c73",
+      "id": "3hop1__857_846_7849",
+      "panel": "transfer"
+    },
+    {
+      "group": "b6d6de2dd5e5a3373afd2508241fcee2eceba5fa9d72a5a39afe6bf3d2549661",
+      "id": "2hop__466700_214359",
+      "panel": "transfer"
+    },
+    {
+      "group": "1af7a3ead72512df686c6bca4d89df240e896b316b1dd940224da6cc63a8949f",
+      "id": "2hop__495316_660579",
+      "panel": "transfer"
+    },
+    {
+      "group": "f94069db0ce58c43d973adcbe6ae4f124ef1146a65934c892c1b8c11b849404d",
+      "id": "2hop__460946_294723",
+      "panel": "transfer"
+    },
+    {
+      "group": "406afb63b5e9adbbb8cbed66172df93edb0c765d9b167363f271ae16f1907758",
+      "id": "2hop__462179_643013",
+      "panel": "transfer"
+    },
+    {
+      "group": "1aef0e9cfb04e7e231b37f7cb8c72d92765eabe9aab8fdde7ccd1f199c1f816b",
+      "id": "2hop__68590_27619",
+      "panel": "transfer"
+    },
+    {
+      "group": "45da20d8622e9196bbde9b70b9cf2d5dc7b7a0432dea92adca12aa34cf496352",
+      "id": "2hop__215898_67465",
+      "panel": "transfer"
+    },
+    {
+      "group": "a3bb2d56407eb6c5398cb81be4b98f1810ae0df7057fabf47e498fa0d4b72cd1",
+      "id": "2hop__504464_708278",
+      "panel": "transfer"
+    },
+    {
+      "group": "2125f297c7f944e1256a10713186bbb764e1d59115fd460372c308b3b7f3b3cd",
+      "id": "2hop__640262_122868",
+      "panel": "replication"
+    },
+    {
+      "group": "542051881a001e87b59e9d77a28c2c88c52d754ca5029d543b32615ce0cd8a80",
+      "id": "2hop__95970_456836",
+      "panel": "replication"
+    },
+    {
+      "group": "a7029de6519e88386a5b04ee5cfd75ad7873acf6b1cbaf191a756646dfe275a0",
+      "id": "2hop__87589_362941",
+      "panel": "replication"
+    },
+    {
+      "group": "76e8a46a32f8f743b8d0e8d03d21ddd538f18c8ffa6d4f608519b027266dad81",
+      "id": "2hop__543050_245420",
+      "panel": "replication"
+    },
+    {
+      "group": "3e665fe20a074857994889992fd28a7d5e5f340798b1066f192a3cda46c32e3a",
+      "id": "2hop__20433_157939",
+      "panel": "replication"
+    },
+    {
+      "group": "b1bee7db6354010facb632cb5ef17d95303e804cf0341b0ea1dda1d51520a934",
+      "id": "2hop__131275_72870",
+      "panel": "replication"
+    },
+    {
+      "group": "3eee9f4146cd59796fcd1613962db456c6e402fbdf7cf69711ae63e95c98fdc2",
+      "id": "2hop__780652_93362",
+      "panel": "replication"
+    },
+    {
+      "group": "56957cd5c8a09108a00d055f08845cf988257a309d5ec93ce951b031314992ef",
+      "id": "4hop1__21282_692112_214799_259594",
+      "panel": "replication"
+    }
+  ],
+  "selection": "eight smallest sha256(\"natural-stop-standard-replay-v1:\" + group) per panel"
+}

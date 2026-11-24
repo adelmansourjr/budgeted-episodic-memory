@@ -34,6 +34,8 @@ The verified run used one loaded local model, one active sequence and **1.74 GiB
 
 [Frozen protocol](EQUAL_DECODE_PROTOCOL.md) · [Summary](equal-decode/summary.json) · [Numerical ledger](equal-decode/cases.jsonl) · [Original panel manifest](equal-decode/transfer_preparation.json) · [Replication manifest](equal-decode/replication_preparation.json)
 
+The follow-up also compares equal scored lengths with stock greedy stopping preserved. [Natural-stop report](NATURAL_STOP.md)
+
 ## Reproduce
 
 Use the released local checkpoint and prior reproducible panels. The numeric ledger includes emitted token counts and sequence digests. The evaluator keeps raw generated token arrays in scratch, separate from the public artifacts.
